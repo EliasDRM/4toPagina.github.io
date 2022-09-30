@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@font-face {
+    font-family: Retroica;
+    src: url('./monospace.bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Retroica;
+}
+
+:root {
+    --clr: #3d332e
+}
+
+body {
+    background: url("https://cdn.discordapp.com/attachments/1024457155191001149/1025093865058861076/Sin_titulo-1.png")
+}
+
+.atras {
+    display: none;
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+    background: rgba(255, 255, 255, 0.8);
+    animation: logo-entrada 2s cubic-bezier(0.000, 1.465, 0.810, 1.650) forwards;
+    padding: 1%;
+    font-size: 3vh;
+    border-radius: 5px;
+
+    transition: .5s;
+}
+
+.home {
+    display: flex;
+}
+
+.tarea1 {
+    display: none;
+}
+
+.tarea2 {
+    display: none;
+}
+
+.tarea3 {
+    display: none;
+}
+
+.tareatexto {
+    font-size: 3vh;
+    margin: 3%;
+}
+
+
+.btnd {
+    padding: 3%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+    margin-top: 5%;
+    left: 20% !important;
+    width: max-content;
+    opacity: 0.6;
+    transition: .5s;
+}
+
+.btnd:hover {
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.tema {
+    position: absolute;
+    top: 4.3%;
+    left: 5%;
+    font-size: 4vh;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 1%;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+    padding-right: 10%;
+    text-shadow: 0px 0px 2px #000;
+}
+
+.pirncipal {
+    position: absolute;
+    width: 70%;
+    height: 78%;
+    background: rgba(255, 255, 255, 0.8);
+    top: 55%;
+    left: 40%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.clase {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0.8);
+    top: 30%;
+    left: 25%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    text-align: center;
+    transition: .5s;
+}
+
+.clase:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+.clase2 {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0.8);
+    top: 30%;
+    left: 75%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    text-align: center;
+    transition: .5s;
+}
+
+.clase2:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+.clase3 {
+    position: absolute;
+    width: 90%;
+    height: 35%;
+    background: rgba(255, 255, 255, 0.8);
+    top: 75%;
+    left: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    text-align: center;
+    transition: .5s;
+}
+
+.clase3:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.otros {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.8);
+    top: 55%;
+    left: 87%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.soon {
+    position: absolute;
+    color: #000;
+    opacity: 0.8;
+    font-size: 3vh;
+    margin-top: 4% !important;
+    margin-left: 35%;
+}
+
+.soon img {
+    width: 50%;
+}
+
+.otros1 {
+    position: relative;
+    color: #000;
+    opacity: 0.8;
+    font-size: 4vh;
+    padding: 2%;
+    width: 70%;
+    left: 13%;
+    top: 20%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+    background: #fff;
+    justify-content: center;
+    text-align: center;
+    transition: .5s;
+
+}
+
+.nohay {
+    position: absolute;
+    color: #000;
+    font-size: 4vh;
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    text-align: center;
+    animation: logo-entrada 2s cubic-bezier(0.000, 1.465, 0.810, 1.650) forwards;
+}
+
+
+.ajsutes {
+    display: none;
+    justify-items: center;
+}
+
+.creador {
+    display: none;
+    justify-items: center;
+}
+
+.otros2 {
+    position: relative;
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+    font-size: 4vh;
+    padding: 10px;
+    width: 70%;
+    left: 13%;
+    top: 25%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+    background: #fff;
+    justify-content: center;
+    text-align: center;
+    transition: .5s;
+
+}
+
+.otros3 {
+    position: relative;
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+    font-size: 4vh;
+    padding: 10px;
+    width: 70%;
+    left: 13%;
+    top: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+    background: #fff;
+    justify-content: center;
+    text-align: center;
+    transition: .5s;
+
+}
+
+.otros4 {
+    position: relative;
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+    font-size: 4vh;
+    padding: 10px;
+    width: 70%;
+    left: 13%;
+    top: 34%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+    background: #fff;
+    justify-content: center;
+    text-align: center;
+    transition: .5s;
+
+}
+
+.otros1:hover {
+
+    transform: scale(0.9);
+}
+
+.otros2:hover {
+
+    transform: scale(0.9);
+}
+
+
+.otros3:hover {
+
+    transform: scale(0.9);
+}
+
+.otros4:hover {
+
+    transform: scale(0.9);
+}
+
+
+
+/* INICIO DE HORARIO */
+.horario {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background: url("https://cdn.discordapp.com/attachments/1022361054430376066/1023102827645644880/unknown.png");
+    border-radius: 10px;
+    left: 3%;
+    top: 8%;
+    filter: grayscale(100);
+    animation: logo-entrada 2s cubic-bezier(0.000, 1.465, 0.810, 1.650) forwards;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.horario:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    opacity: 1;
+
+}
+
+.entrada {
+    animation: logo-entrada 2s cubic-bezier(0.000, 1.465, 0.810, 1.650) forwards;
+}
+
+.horariotext {
+    position: relative;
+    left: 20%;
+    bottom: -70%;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0px 0px 10px #000;
+}
+
+/* FINAL DE HORARIO */
+
+/* FILTRO Y LOGIN */
+
+.filtro {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    transition: .5s;
+    z-index: 9999999999999999999999;
+}
+
+.bloquear {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    transition: .5s;
+    z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+
+.racargar{
+    position: relative;
+    width: 30%;
+    height: 30%;
+    background: rgba(228, 32, 32, 0.8);
+    box-shadow: 0px 0px 5px 0px rgba(228, 32, 32, 0.8);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-items: center;
+}
+
+.racargar p {
+    font-size: 2vh;
+    color: #fff;
+}
+
+.login {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.Verificar p {
+    position: relative;
+    text-align: center;
+    top: 30%;
+    color: #000;
+    opacity: 0.5;
+    font-size: 25px;
+    transition: .5s;
+}
+
+.Verificar:hover p {
+    position: relative;
+    text-align: center;
+    top: 30%;
+    color: #000;
+    opacity: 1;
+    font-size: 25px;
+}
+
+.Verificar {
+    position: relative;
+    width: 50%;
+    height: 30%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+    top: 97%;
+    left: 25%;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.Verificar:hover {
+    transform: scale(1.1);
+}
+
+
+input {
+    position: relative;
+   left: 23%;
+    top: 40%;
+    padding: 10px;
+    font-size: 30px;
+    width: 60%;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #727272;
+    opacity: 0.5;
+    transition: .5s;
+    border-radius: 5px;
+    z-index: 99999999999999999999999999999999999999999999999;
+}
+
+.input ::placeholder{
+    color: #000;
+}
+
+input:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* INICIO DE CUADROS */
+
+.card {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    top: 20%;
+    left: 50%;
+    border-radius: 20px;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.card:hover {
+    width: 600px;
+    transition-delay: 0s;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    align-items: center;
+    background: #fff;
+}
+
+
+
+/* INICIO DE CUADROS */
+
+
+.cardp {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(100%);
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    animation: logo-entrada 2s cubic-bezier(0.000, 1.465, 0.810, 1.650) forwards;
+    transition: .5s;
+
+}
+
+
+
+
+
+.cuadro1 {
+    position: absolute;
+    top: 61%;
+    left: 94%;
+    background: rgba(255, 255, 255, 0.8);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    backdrop-filter: blur(100%);
+    transition: .5s;
+
+}
+
+.cuadro2 {
+    position: absolute;
+    top: 54%;
+    left: -4%;
+    background: rgba(255, 255, 255, 0.8);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(100%);
+    transition: .5s;
+
+}
+
+.cardp:hover .cuadro2 {
+    transform: translateY(-55px) translateX(-20px) scale(2);
+}
+
+.cuadro3 {
+    position: absolute;
+    top: 12%;
+    left: 95%;
+    background: rgba(255, 255, 255, 0.8);
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(100%);
+    transition: .5s;
+
+}
+
+.cardp:hover .cuadro3 {
+    left: 95%;
+    width: 60px;
+    height: 60px;
+}
+
+.cardp:hover .cuadro1 {
+    transform: translateY(15px) translateX(5px) scale(1.5);
+
+}
+
+.imgBx {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.8);
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s;
+
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+
+.cardp .contentp {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.cardp .contentp .details {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    transition: .5s;
+    transform: translateY(150px);
+}
+
+.cardp:hover .contentp .details {
+    transform: translateY(0px);
+}
+
+.cardp .contentp .details h2 {
+    color: var(--clr);
+    line-height: 1.2em;
+}
+
+.cardp .contentp .details h2 span {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 70%;
+}
+
+.cardp .contentp .details .actionBtn {
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+    margin-top: 13px;
+}
+
+.tareas {
+    display: none;
+
+}
+
+.cardp .contentp .details .actionBtn button {
+    padding: 10px 30px;
+    border: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 4vh;
+    background: #fff !important;
+    color: #f00;
+    box-shadow: 0px 0px 10px 0px var(--clr);
+    backdrop-filter: blur(100%);
+    transition: .5s;
+}
+
+.cardp .contentp .details .actionBtn button:nth-child(1):hover {
+    transform: scale(0.9) rotate(3deg);
+}
+
+.cardp .contentp .details .actionBtn button:nth-child(2) {
+    color: #fff;
+    background: linear-gradient(#9198e5, #e66465) !important;
+    transition: .5s;
+}
+
+.cardp .contentp .details .actionBtn button:nth-child(2):hover {
+
+    transform: scale(0.9) rotate(3deg);
+
+}
+
+
+.cardp:hover .imgBx {
+    width: 250px;
+    height: 250px;
+}
+
+.imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #000;
+    object-fit: cover;
+}
+
+.cardp:hover {
+    height: 450px;
+    transform: translateY(-30px);
+}
+
+/* FIN DE CUADROS */
+/* INICIO DE BARRA DE NAVEGACION */
+
+.navigation {
+    position: relative;
+    top: 130px;
+    right: -78.5%;
+    width: 340px;
+    padding-left: 40px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: .5s;
+    backdrop-filter: blur(100%);
+    animation: logo-entrada 2s cubic-bezier(0.000, 1.465, 0.810, 1.650) forwards;
+    z-index: 999999999999999999999999999;
+}
+
+.navigation ul {
+    display: flex;
+    width: 350px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: .5s;
+    color: var(--clr);
+}
+
+.navigation ul li.active a .icon {
+    transform: translateY(-32px) rotate(360deg);
+    color: #000;
+
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    color: var(--clr);
+    letter-spacing: 0.05em;
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 50%;
+    border: 6px solid #0078d4ac;
+    box-shadow: 0px 0px 10px 0px #0078d4ac;
+    backdrop-filter: blur(100%);
+    transition: .5s;
+}
+
+.indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 transparent;
+    transition: .5s;
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 transparent;
+    transition: .5s;
+}
+
+.navigation ul li:nth-child(1).active~.indicator {
+    transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+    transform: translateX(calc(70px * 1));
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+    transform: translateX(calc(70px * 2));
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+    transform: translateX(calc(70px * 3));
+}
+
+.titulo {
+    position: relative;
+    color: #000;
+    opacity: 0.5;
+    font-size: 800%;
+    margin-top: 13% !important;
+    text-shadow: 0px 0px 2px #000;
+}
+
+
+
+
+/* FIN DE BARRA DE NAVEGACION */
+
+@keyframes logo-entrada {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100;
+    }
+}
